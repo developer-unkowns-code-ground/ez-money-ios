@@ -16,7 +16,20 @@
 		711DB7BA25AB5703001170A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711DB7B825AB5703001170A3 /* LaunchScreen.storyboard */; };
 		711DB7C525AB5703001170A3 /* BobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DB7C425AB5703001170A3 /* BobotTests.swift */; };
 		711DB7D025AB5703001170A3 /* BobotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711DB7CF25AB5703001170A3 /* BobotUITests.swift */; };
+		713BD69625ACB1C500C3A305 /* EmptyWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD69525ACB1C500C3A305 /* EmptyWalletView.swift */; };
+		713BD6AB25ACB33600C3A305 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 713BD6AD25ACB33600C3A305 /* Localizable.strings */; };
+		713BD6BF25ACB3F300C3A305 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD6BE25ACB3F300C3A305 /* R.generated.swift */; };
 		71E523F925AB5A1100E07230 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E523F825AB5A1100E07230 /* LoginViewModel.swift */; };
+		71E5240525AB602200E07230 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5240425AB602200E07230 /* DashboardView.swift */; };
+		71E5240B25AB603600E07230 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5240A25AB603600E07230 /* TransactionView.swift */; };
+		71E5241025AB604600E07230 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5240F25AB604600E07230 /* DashboardViewModel.swift */; };
+		71E5241525AB605000E07230 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5241425AB605000E07230 /* TransactionViewModel.swift */; };
+		71E5242E25AB684E00E07230 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E5242D25AB684E00E07230 /* Colors.xcassets */; };
+		71E5243925AB6C7600E07230 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5243625AB6C7600E07230 /* Poppins-Bold.ttf */; };
+		71E5243A25AB6C7600E07230 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5243725AB6C7600E07230 /* Poppins-SemiBold.ttf */; };
+		71E5243B25AB6C7600E07230 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5243825AB6C7600E07230 /* Poppins-Regular.ttf */; };
+		71E5244A25AB6EB800E07230 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5244825AB6EB800E07230 /* Poppins-Italic.ttf */; };
+		71E5244B25AB6EB800E07230 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5244925AB6EB800E07230 /* Poppins-BoldItalic.ttf */; };
 		889EAE9E20E63553566FAE28 /* Pods_Bobot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F045BE74065AD42B680732 /* Pods_Bobot.framework */; };
 		F165B649B70869DAFE642400 /* Pods_Bobot_BobotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C188648A72C91AA41AFB05CE /* Pods_Bobot_BobotUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +72,20 @@
 		711DB7CB25AB5703001170A3 /* BobotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BobotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		711DB7CF25AB5703001170A3 /* BobotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobotUITests.swift; sourceTree = "<group>"; };
 		711DB7D125AB5703001170A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713BD69525ACB1C500C3A305 /* EmptyWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWalletView.swift; sourceTree = "<group>"; };
+		713BD6AC25ACB33600C3A305 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		713BD6BE25ACB3F300C3A305 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		71E523F825AB5A1100E07230 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		71E5240425AB602200E07230 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		71E5240A25AB603600E07230 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		71E5240F25AB604600E07230 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		71E5241425AB605000E07230 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		71E5242D25AB684E00E07230 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		71E5243625AB6C7600E07230 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		71E5243725AB6C7600E07230 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		71E5243825AB6C7600E07230 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		71E5244825AB6EB800E07230 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		71E5244925AB6EB800E07230 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		A7F045BE74065AD42B680732 /* Pods_Bobot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bobot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE53C7A35AD92FD9B4D1916A /* Pods-BobotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BobotTests.debug.xcconfig"; path = "Target Support Files/Pods-BobotTests/Pods-BobotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C188648A72C91AA41AFB05CE /* Pods_Bobot_BobotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bobot_BobotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,13 +144,11 @@
 		711DB7AC25AB5701001170A3 /* Bobot */ = {
 			isa = PBXGroup;
 			children = (
-				71E523ED25AB58BC00E07230 /* Views */,
-				711DB7AD25AB5701001170A3 /* AppDelegate.swift */,
-				711DB7AF25AB5701001170A3 /* SceneDelegate.swift */,
-				711DB7B325AB5703001170A3 /* Assets.xcassets */,
-				711DB7B825AB5703001170A3 /* LaunchScreen.storyboard */,
-				711DB7BB25AB5703001170A3 /* Info.plist */,
+				71E5242625AB658A00E07230 /* Application */,
+				71E5241925AB615700E07230 /* Components */,
 				711DB7B525AB5703001170A3 /* Preview Content */,
+				71E5242125AB654F00E07230 /* Resources */,
+				71E523ED25AB58BC00E07230 /* Views */,
 			);
 			path = Bobot;
 			sourceTree = "<group>";
@@ -155,21 +179,100 @@
 			path = BobotUITests;
 			sourceTree = "<group>";
 		};
+		713BD68C25ACB1A100C3A305 /* EmptyWalletView */ = {
+			isa = PBXGroup;
+			children = (
+				713BD69525ACB1C500C3A305 /* EmptyWalletView.swift */,
+			);
+			path = EmptyWalletView;
+			sourceTree = "<group>";
+		};
 		71E523ED25AB58BC00E07230 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71E523EE25AB58D000E07230 /* Login */,
+				71E5240925AB602500E07230 /* TransactionView */,
+				71E5240325AB601300E07230 /* DashboardView */,
+				71E523EE25AB58D000E07230 /* LoginView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		71E523EE25AB58D000E07230 /* Login */ = {
+		71E523EE25AB58D000E07230 /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
 				711DB7B125AB5701001170A3 /* LoginView.swift */,
 				71E523F825AB5A1100E07230 /* LoginViewModel.swift */,
 			);
-			path = Login;
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		71E5240325AB601300E07230 /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				71E5240425AB602200E07230 /* DashboardView.swift */,
+				71E5240F25AB604600E07230 /* DashboardViewModel.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		71E5240925AB602500E07230 /* TransactionView */ = {
+			isa = PBXGroup;
+			children = (
+				71E5240A25AB603600E07230 /* TransactionView.swift */,
+				71E5241425AB605000E07230 /* TransactionViewModel.swift */,
+			);
+			path = TransactionView;
+			sourceTree = "<group>";
+		};
+		71E5241925AB615700E07230 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				71E5241A25AB615E00E07230 /* EmptyState */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		71E5241A25AB615E00E07230 /* EmptyState */ = {
+			isa = PBXGroup;
+			children = (
+				713BD68C25ACB1A100C3A305 /* EmptyWalletView */,
+			);
+			path = EmptyState;
+			sourceTree = "<group>";
+		};
+		71E5242125AB654F00E07230 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				711DB7B325AB5703001170A3 /* Assets.xcassets */,
+				71E5242D25AB684E00E07230 /* Colors.xcassets */,
+				71E5243525AB6C3100E07230 /* Fonts */,
+				711DB7B825AB5703001170A3 /* LaunchScreen.storyboard */,
+				713BD6AD25ACB33600C3A305 /* Localizable.strings */,
+				713BD6BE25ACB3F300C3A305 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71E5242625AB658A00E07230 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				711DB7BB25AB5703001170A3 /* Info.plist */,
+				711DB7AD25AB5701001170A3 /* AppDelegate.swift */,
+				711DB7AF25AB5701001170A3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		71E5243525AB6C3100E07230 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71E5244925AB6EB800E07230 /* Poppins-BoldItalic.ttf */,
+				71E5244825AB6EB800E07230 /* Poppins-Italic.ttf */,
+				71E5243625AB6C7600E07230 /* Poppins-Bold.ttf */,
+				71E5243825AB6C7600E07230 /* Poppins-Regular.ttf */,
+				71E5243725AB6C7600E07230 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		74948529C4F431A607237476 /* Pods */ = {
@@ -203,6 +306,7 @@
 			buildConfigurationList = 711DB7D425AB5703001170A3 /* Build configuration list for PBXNativeTarget "Bobot" */;
 			buildPhases = (
 				663E9E25FB750F3B7B387EDD /* [CP] Check Pods Manifest.lock */,
+				713BD6B125ACB38C00C3A305 /* R.swift */,
 				711DB7A625AB5701001170A3 /* Sources */,
 				711DB7A725AB5701001170A3 /* Frameworks */,
 				711DB7A825AB5701001170A3 /* Resources */,
@@ -305,7 +409,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E5244B25AB6EB800E07230 /* Poppins-BoldItalic.ttf in Resources */,
 				711DB7BA25AB5703001170A3 /* LaunchScreen.storyboard in Resources */,
+				71E5242E25AB684E00E07230 /* Colors.xcassets in Resources */,
+				71E5244A25AB6EB800E07230 /* Poppins-Italic.ttf in Resources */,
+				71E5243B25AB6C7600E07230 /* Poppins-Regular.ttf in Resources */,
+				713BD6AB25ACB33600C3A305 /* Localizable.strings in Resources */,
+				71E5243925AB6C7600E07230 /* Poppins-Bold.ttf in Resources */,
+				71E5243A25AB6C7600E07230 /* Poppins-SemiBold.ttf in Resources */,
 				711DB7B725AB5703001170A3 /* Preview Assets.xcassets in Resources */,
 				711DB7B425AB5703001170A3 /* Assets.xcassets in Resources */,
 			);
@@ -423,6 +534,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		713BD6B125ACB38C00C3A305 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		82281FECF9CCA3AD2208ACB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,9 +601,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E523F925AB5A1100E07230 /* LoginViewModel.swift in Sources */,
+				713BD69625ACB1C500C3A305 /* EmptyWalletView.swift in Sources */,
 				711DB7AE25AB5701001170A3 /* AppDelegate.swift in Sources */,
+				71E5240525AB602200E07230 /* DashboardView.swift in Sources */,
 				711DB7B025AB5701001170A3 /* SceneDelegate.swift in Sources */,
 				711DB7B225AB5701001170A3 /* LoginView.swift in Sources */,
+				71E5240B25AB603600E07230 /* TransactionView.swift in Sources */,
+				713BD6BF25ACB3F300C3A305 /* R.generated.swift in Sources */,
+				71E5241025AB604600E07230 /* DashboardViewModel.swift in Sources */,
+				71E5241525AB605000E07230 /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +651,14 @@
 				711DB7B925AB5703001170A3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		713BD6AD25ACB33600C3A305 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				713BD6AC25ACB33600C3A305 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -645,7 +790,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bobot/Preview Content\"";
 				DEVELOPMENT_TEAM = C597HYDG9A;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bobot/Info.plist;
+				INFOPLIST_FILE = Bobot/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,7 +813,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bobot/Preview Content\"";
 				DEVELOPMENT_TEAM = C597HYDG9A;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Bobot/Info.plist;
+				INFOPLIST_FILE = Bobot/Application/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -6,6 +6,7 @@ target 'Bobot' do
   use_frameworks!
 
   pod 'GoogleSignIn'
+  pod 'R.swift'
 
   # Pods for Bobot
 

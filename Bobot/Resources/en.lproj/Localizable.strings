@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Bobot
+
+  Created by Muhammad Rizky Hasibuan on 11/01/21.
+  
+*/
+
+"App.Main.Name" = "Bobot";
+"App.Main.Title" = "Manage your expenses";
+"Social.Login.Google" = "Continue with Google";
