@@ -9,3 +9,6 @@
 "App.Main.Name" = "Bobot";
 "App.Main.Title" = "Manage your expenses";
 "Social.Login.Google" = "Continue with Google";
+"Wallet.Empty.Title" = "You don’t have any wallet";
+"Wallet.Empty.Subtitle" = "Create one to track your expenses";
+"Wallet.Add.Text" = "Add Wallet";

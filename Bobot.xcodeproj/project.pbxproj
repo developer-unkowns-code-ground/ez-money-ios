@@ -19,6 +19,9 @@
 		713BD69625ACB1C500C3A305 /* EmptyWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD69525ACB1C500C3A305 /* EmptyWalletView.swift */; };
 		713BD6AB25ACB33600C3A305 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 713BD6AD25ACB33600C3A305 /* Localizable.strings */; };
 		713BD6BF25ACB3F300C3A305 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD6BE25ACB3F300C3A305 /* R.generated.swift */; };
+		713BD6CE25ACB60600C3A305 /* ResourceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD6CD25ACB60600C3A305 /* ResourceExtensions.swift */; };
+		713BD6D625ACBDCC00C3A305 /* WalletDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD6D525ACBDCC00C3A305 /* WalletDetailView.swift */; };
+		713BD6DC25ACBDE800C3A305 /* WalletDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713BD6DB25ACBDE800C3A305 /* WalletDetailViewModel.swift */; };
 		71E523F925AB5A1100E07230 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E523F825AB5A1100E07230 /* LoginViewModel.swift */; };
 		71E5240525AB602200E07230 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5240425AB602200E07230 /* DashboardView.swift */; };
 		71E5240B25AB603600E07230 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E5240A25AB603600E07230 /* TransactionView.swift */; };
@@ -30,6 +33,7 @@
 		71E5243B25AB6C7600E07230 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5243825AB6C7600E07230 /* Poppins-Regular.ttf */; };
 		71E5244A25AB6EB800E07230 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5244825AB6EB800E07230 /* Poppins-Italic.ttf */; };
 		71E5244B25AB6EB800E07230 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E5244925AB6EB800E07230 /* Poppins-BoldItalic.ttf */; };
+		71EE628325AE126800EB984A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71EE628225AE126800EB984A /* GoogleService-Info.plist */; };
 		889EAE9E20E63553566FAE28 /* Pods_Bobot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F045BE74065AD42B680732 /* Pods_Bobot.framework */; };
 		F165B649B70869DAFE642400 /* Pods_Bobot_BobotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C188648A72C91AA41AFB05CE /* Pods_Bobot_BobotUITests.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +79,9 @@
 		713BD69525ACB1C500C3A305 /* EmptyWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyWalletView.swift; sourceTree = "<group>"; };
 		713BD6AC25ACB33600C3A305 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		713BD6BE25ACB3F300C3A305 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		713BD6CD25ACB60600C3A305 /* ResourceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceExtensions.swift; sourceTree = "<group>"; };
+		713BD6D525ACBDCC00C3A305 /* WalletDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailView.swift; sourceTree = "<group>"; };
+		713BD6DB25ACBDE800C3A305 /* WalletDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDetailViewModel.swift; sourceTree = "<group>"; };
 		71E523F825AB5A1100E07230 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		71E5240425AB602200E07230 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		71E5240A25AB603600E07230 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 		71E5243825AB6C7600E07230 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		71E5244825AB6EB800E07230 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		71E5244925AB6EB800E07230 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		71EE628225AE126800EB984A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7F045BE74065AD42B680732 /* Pods_Bobot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bobot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE53C7A35AD92FD9B4D1916A /* Pods-BobotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BobotTests.debug.xcconfig"; path = "Target Support Files/Pods-BobotTests/Pods-BobotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C188648A72C91AA41AFB05CE /* Pods_Bobot_BobotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bobot_BobotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +152,8 @@
 		711DB7AC25AB5701001170A3 /* Bobot */ = {
 			isa = PBXGroup;
 			children = (
+				71EE628225AE126800EB984A /* GoogleService-Info.plist */,
+				713BD6CC25ACB5F900C3A305 /* Extensions */,
 				71E5242625AB658A00E07230 /* Application */,
 				71E5241925AB615700E07230 /* Components */,
 				711DB7B525AB5703001170A3 /* Preview Content */,
@@ -187,12 +197,31 @@
 			path = EmptyWalletView;
 			sourceTree = "<group>";
 		};
+		713BD6CC25ACB5F900C3A305 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				713BD6CD25ACB60600C3A305 /* ResourceExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		713BD6DA25ACBDD100C3A305 /* WalletDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				713BD6D525ACBDCC00C3A305 /* WalletDetailView.swift */,
+				713BD6DB25ACBDE800C3A305 /* WalletDetailViewModel.swift */,
+			);
+			path = WalletDetailView;
+			sourceTree = "<group>";
+		};
 		71E523ED25AB58BC00E07230 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71E5240925AB602500E07230 /* TransactionView */,
+				71EE627E25AE048100EB984A /* RootView */,
 				71E5240325AB601300E07230 /* DashboardView */,
 				71E523EE25AB58D000E07230 /* LoginView */,
+				71E5240925AB602500E07230 /* TransactionView */,
+				713BD6DA25ACBDD100C3A305 /* WalletDetailView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +302,13 @@
 				71E5243725AB6C7600E07230 /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		71EE627E25AE048100EB984A /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RootView;
 			sourceTree = "<group>";
 		};
 		74948529C4F431A607237476 /* Pods */ = {
@@ -417,6 +453,7 @@
 				713BD6AB25ACB33600C3A305 /* Localizable.strings in Resources */,
 				71E5243925AB6C7600E07230 /* Poppins-Bold.ttf in Resources */,
 				71E5243A25AB6C7600E07230 /* Poppins-SemiBold.ttf in Resources */,
+				71EE628325AE126800EB984A /* GoogleService-Info.plist in Resources */,
 				711DB7B725AB5703001170A3 /* Preview Assets.xcassets in Resources */,
 				711DB7B425AB5703001170A3 /* Assets.xcassets in Resources */,
 			);
@@ -602,11 +639,14 @@
 			files = (
 				71E523F925AB5A1100E07230 /* LoginViewModel.swift in Sources */,
 				713BD69625ACB1C500C3A305 /* EmptyWalletView.swift in Sources */,
+				713BD6DC25ACBDE800C3A305 /* WalletDetailViewModel.swift in Sources */,
 				711DB7AE25AB5701001170A3 /* AppDelegate.swift in Sources */,
 				71E5240525AB602200E07230 /* DashboardView.swift in Sources */,
 				711DB7B025AB5701001170A3 /* SceneDelegate.swift in Sources */,
+				713BD6CE25ACB60600C3A305 /* ResourceExtensions.swift in Sources */,
 				711DB7B225AB5701001170A3 /* LoginView.swift in Sources */,
 				71E5240B25AB603600E07230 /* TransactionView.swift in Sources */,
+				713BD6D625ACBDCC00C3A305 /* WalletDetailView.swift in Sources */,
 				713BD6BF25ACB3F300C3A305 /* R.generated.swift in Sources */,
 				71E5241025AB604600E07230 /* DashboardViewModel.swift in Sources */,
 				71E5241525AB605000E07230 /* TransactionViewModel.swift in Sources */,

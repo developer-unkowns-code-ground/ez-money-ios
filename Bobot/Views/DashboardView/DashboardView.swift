@@ -11,8 +11,29 @@ struct DashboardView: View {
     var body: some View {
         HStack {
             ScrollView {
-                VStack(alignment: .leading) {
-                    EmptyWalletView()
+                VStack(alignment: .center) {
+                    VStack {
+                        EmptyWalletView()
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal, 24)
+                        
+                        Spacer()
+                            .frame(height: 65)
+                        
+                        VStack {
+                            NavigationLink(
+                                destination: WalletDetailView()) {
+                                VStack {
+                                    Image(R.image.plus.name)
+                                    Text(R.string.localizable.walletAddText())
+                                }
+                                .frame(height: 120)
+                                .frame(maxWidth: .infinity)
+                                .background(R.color.cardBackground.color)
+                                .cornerRadius(16)
+                            }
+                        }
+                    }
                 }
             }
             .padding(.all)

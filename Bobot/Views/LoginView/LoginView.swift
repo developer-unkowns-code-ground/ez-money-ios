@@ -20,7 +20,7 @@ struct LoginView: View {
                     HStack(alignment: .center) {
                         VStack {
                             VStack {
-                                Image("BobotLogo")
+                                Image(R.image.bobotLogo.name)
                                     .resizable()
                                     .aspectRatio(1.5, contentMode: .fit)
                             }
@@ -28,13 +28,13 @@ struct LoginView: View {
                             .padding(EdgeInsets(top: 0, leading: 50, bottom: 0, trailing: 50))
                             
                             Text(R.string.localizable.appMainName())
-                                .font(.custom("Poppins-BoldItalic", size: 48))
+                                .font(R.font.poppinsBoldItalic.font(size: 38))
                                 .italic()
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
                             
                             Text(R.string.localizable.appMainTitle())
-                                .font(.custom("Poppins-BoldItalic", size: 24))
+                                .font(R.font.poppinsBoldItalic.font(size: 24))
                                 .italic()
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
@@ -42,11 +42,11 @@ struct LoginView: View {
                             Spacer()
                                 .frame(height: 50)
                             
-                            Button(action: viewModel.didTapLoginButton, label: {
-                                Image("Google")
+                            Button(action: viewModel.loginHandler, label: {
+                                Image(R.image.google.name)
                                 Text(R.string.localizable.socialLoginGoogle())
                                     .fontWeight(.bold)
-                                    .font(.custom("Poppins-Bold", size: 16))
+                                    .font(R.font.poppinsBold.font(size: 16))
                                     .foregroundColor(.black)
                             })
                             .frame(maxWidth: .infinity, minHeight: 58)
@@ -62,14 +62,16 @@ struct LoginView: View {
                 
                 NavigationLink(
                     destination: DashboardView(),
-                    isActive: $viewModel.isLogginable) {
+                    isActive: $viewModel.isLoggedIn) {
                     EmptyView()
                 }
             }
-            .background(Color("Supreme"))
+            .background(R.color.supreme.color)
             .edgesIgnoringSafeArea(.all)
         }
+        .onAppear(perform: viewModel.onAppear)
     }
+    
 }
 
 struct LoginView_Previews: PreviewProvider {
