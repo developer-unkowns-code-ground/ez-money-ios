@@ -41,7 +41,9 @@ extension LoginViewModel: GIDSignInDelegate {
         let givenName = user.profile.givenName
         let familyName = user.profile.familyName
         let email = user.profile.email
+        let accessToken = user.authentication.accessToken
         
+        print("accessToken: ", accessToken)
         print("idToken: ", idToken)
     }
     
