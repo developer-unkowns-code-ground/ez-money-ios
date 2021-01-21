@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct RootView: View {
-    init(viewModel: RootViewModel) {
-        self.viewModel = viewModel
-    }
-    
-    @ObservedObject private var viewModel: RootViewModel
+    @EnvironmentObject var authState: AuthenticationState
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Group {
+            if authState.isAuthenticated {
+                let viewModel = DashboardViewModel()
+                DashboardView(viewModel: viewModel)
+            } else {
+                let viewModel = LoginViewModel()
+                LoginView(viewModel: viewModel)
+            }
+        }
+        .animation(.easeInOut)
+        .transition(.move(edge: .leading))
     }
 }
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = RootViewModel()
-        RootView(viewModel: viewModel)
+        RootView()
     }
 }

@@ -9,10 +9,8 @@ import Combine
 import GoogleSignIn
 
 final class LoginViewModel: NSObject, ViewModel {
-    @Published var isLoggedIn: Bool = false
-    
     func loginHandler() {
-        isLoggedIn = true
+        AuthenticationState.shared.isAuthenticated = true
         
 //        GIDSignIn.sharedInstance()?.signIn()
     }

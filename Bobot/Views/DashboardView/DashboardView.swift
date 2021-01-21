@@ -15,38 +15,40 @@ struct DashboardView: View {
     @ObservedObject private var viewModel: DashboardViewModel
     
     var body: some View {
-        HStack {
-            ScrollView {
-                VStack(alignment: .center) {
-                    VStack {
-                        EmptyWalletView()
-                            .frame(maxWidth: .infinity)
-                            .padding(.horizontal, 24)
-                        
-                        Spacer()
-                            .frame(height: 65)
-                        
+        NavigationView {
+            HStack {
+                ScrollView {
+                    VStack(alignment: .center) {
                         VStack {
-                            NavigationLink(
-                                destination: WalletDetailView(viewModel: WalletDetailViewModel())) {
-                                VStack {
-                                    Image(R.image.plus.name)
-                                    Text(R.string.localizable.walletAddText())
-                                }
-                                .frame(height: 120)
+                            EmptyWalletView()
                                 .frame(maxWidth: .infinity)
-                                .background(R.color.cardBackground.color)
-                                .cornerRadius(16)
+                                .padding(.horizontal, 24)
+                            
+                            Spacer()
+                                .frame(height: 65)
+                            
+                            VStack {
+                                NavigationLink(
+                                    destination: WalletDetailView(viewModel: WalletDetailViewModel())) {
+                                    VStack {
+                                        Image(R.image.plus.name)
+                                        Text(R.string.localizable.walletAddText())
+                                    }
+                                    .frame(height: 120)
+                                    .frame(maxWidth: .infinity)
+                                    .background(R.color.cardBackground.color)
+                                    .cornerRadius(16)
+                                }
                             }
                         }
                     }
                 }
+                .padding(.all)
+                
+                Spacer()
             }
-            .padding(.all)
-            
-            Spacer()
+            .navigationBarTitle("Your Wallet")
         }
-        .navigationBarTitle("Your Wallet")
     }
 }
 

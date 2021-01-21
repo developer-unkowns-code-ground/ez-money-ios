@@ -63,12 +63,6 @@ struct LoginView: View {
                 }
 
                 Spacer()
-                
-                NavigationLink(
-                    destination: DashboardView(viewModel: DashboardViewModel()),
-                    isActive: $viewModel.isLoggedIn) {
-                    EmptyView()
-                }
             }
             .background(R.color.supreme.color)
             .edgesIgnoringSafeArea(.all)

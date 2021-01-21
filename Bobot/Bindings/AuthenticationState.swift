@@ -14,5 +14,7 @@ class AuthenticationState: NSObject, ObservableObject {
     override private init() {
         super.init()
     }
+    
+    static let shared = AuthenticationState()
 }
  
