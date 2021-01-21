@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct TransactionView: View {
+    init(viewModel: TransactionViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    @ObservedObject private var viewModel: TransactionViewModel
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +21,7 @@ struct TransactionView: View {
 
 struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
-        TransactionView()
+        let viewModel = TransactionViewModel()
+        TransactionView(viewModel: viewModel)
     }
 }

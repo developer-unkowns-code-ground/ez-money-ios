@@ -8,6 +8,6 @@
 import Foundation
 import Combine
 
-final class TransactionViewModel: ObservableObject {
+final class TransactionViewModel: ViewModel {
     
 }

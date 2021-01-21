@@ -8,13 +8,13 @@
 import Combine
 import GoogleSignIn
 
-final class LoginViewModel: NSObject, ObservableObject {
+final class LoginViewModel: NSObject, ViewModel {
     @Published var isLoggedIn: Bool = false
     
     func loginHandler() {
-//        isLoggedIn = true
+        isLoggedIn = true
         
-        GIDSignIn.sharedInstance()?.signIn()
+//        GIDSignIn.sharedInstance()?.signIn()
     }
     
     func onAppear() {
@@ -42,6 +42,8 @@ extension LoginViewModel: GIDSignInDelegate {
         let familyName = user.profile.familyName
         let email = user.profile.email
         let accessToken = user.authentication.accessToken
+        
+        UserDefaults.standard.setValue(true, forKey: UserDefaultsKeys.isSignedIn.rawValue)
         
         print("accessToken: ", accessToken)
         print("idToken: ", idToken)

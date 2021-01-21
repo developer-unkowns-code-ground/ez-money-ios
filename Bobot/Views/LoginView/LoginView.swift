@@ -9,7 +9,11 @@ import SwiftUI
 import GoogleSignIn
 
 struct LoginView: View {
-    @ObservedObject private var viewModel = LoginViewModel()
+    init(viewModel: LoginViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    @ObservedObject private var viewModel: LoginViewModel
 
     var body: some View {
         NavigationView {
@@ -49,7 +53,7 @@ struct LoginView: View {
                                     .font(R.font.poppinsBold.font(size: 16))
                                     .foregroundColor(.black)
                             })
-                            .frame(maxWidth: .infinity, minHeight: 58)
+                            .frame(maxWidth: .infinity, minHeight: 56)
                             .padding(.horizontal, 22)
                             .background(Color.white)
                             .cornerRadius(60)
@@ -61,7 +65,7 @@ struct LoginView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: DashboardView(),
+                    destination: DashboardView(viewModel: DashboardViewModel()),
                     isActive: $viewModel.isLoggedIn) {
                     EmptyView()
                 }
@@ -76,6 +80,7 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        let viewModel = LoginViewModel()
+        LoginView(viewModel: viewModel)
     }
 }

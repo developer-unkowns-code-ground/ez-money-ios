@@ -7,6 +7,12 @@
 
 import Combine
 
-final class WalletDetailViewModel: ObservableObject {
+final class WalletDetailViewModel: ViewModel {
+    @Published var budget: String = ""
+    @Published var walletName: String = ""
+    @Published var isWalletAdded: Bool = false
     
+    func addWalletHandler() {
+        isWalletAdded = true
+    }
 }

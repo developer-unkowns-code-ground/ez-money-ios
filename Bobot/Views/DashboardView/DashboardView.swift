@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct DashboardView: View {
+    init(viewModel: DashboardViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    @ObservedObject private var viewModel: DashboardViewModel
+    
     var body: some View {
         HStack {
             ScrollView {
@@ -22,7 +28,7 @@ struct DashboardView: View {
                         
                         VStack {
                             NavigationLink(
-                                destination: WalletDetailView()) {
+                                destination: WalletDetailView(viewModel: WalletDetailViewModel())) {
                                 VStack {
                                     Image(R.image.plus.name)
                                     Text(R.string.localizable.walletAddText())
@@ -37,15 +43,16 @@ struct DashboardView: View {
                 }
             }
             .padding(.all)
-            .navigationBarTitle("Your Wallet")
             
             Spacer()
         }
+        .navigationBarTitle("Your Wallet")
     }
 }
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView()
+        let viewModel = DashboardViewModel()
+        DashboardView(viewModel: viewModel)
     }
 }

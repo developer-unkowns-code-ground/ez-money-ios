@@ -12,3 +12,9 @@
 "Wallet.Empty.Title" = "You don’t have any wallet";
 "Wallet.Empty.Subtitle" = "Create one to track your expenses";
 "Wallet.Add.Text" = "Add Wallet";
+"Form.Title.Budget" = "Budget";
+"Form.Title.WalletName" = "Wallet Name";
+"Form.Button.Save" = "Save";
+"Form.Button.AddWallet" = "Add Wallet";
+"Transaction.Empty.Title" = "You don’t have any transaction";
+"Transaction.Empty.Subtitle" = "Input your daily transaction";
