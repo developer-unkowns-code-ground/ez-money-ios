@@ -192,12 +192,13 @@
 		711DB7AC25AB5701001170A3 /* Bobot */ = {
 			isa = PBXGroup;
 			children = (
-				7119947B25B3FE0C0048C401 /* Bindings */,
-				71EE630225AE1C1400EB984A /* Base */,
 				71E5242625AB658A00E07230 /* Application */,
+				71EE630225AE1C1400EB984A /* Base */,
+				7119947B25B3FE0C0048C401 /* Bindings */,
 				71E5241925AB615700E07230 /* Components */,
 				71EE62EB25AE1B1200EB984A /* Enums */,
 				713BD6CC25ACB5F900C3A305 /* Extensions */,
+				71E6ED5F25B9F250004FCE39 /* Networking */,
 				711DB7B525AB5703001170A3 /* Preview Content */,
 				71E5242125AB654F00E07230 /* Resources */,
 				71E523ED25AB58BC00E07230 /* Views */,
@@ -398,6 +399,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		71E6ED5F25B9F250004FCE39 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		71EE62EB25AE1B1200EB984A /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +468,7 @@
 				711DB7A825AB5701001170A3 /* Resources */,
 				120ED4096E2F1ADBFAC57331 /* [CP] Embed Pods Frameworks */,
 				230525096E1072241EADD21F /* [CP] Copy Pods Resources */,
+				71E6ED6425B9F3E0004FCE39 /* Generate GraphQL Queries */,
 			);
 			buildRules = (
 			);
@@ -499,6 +508,7 @@
 				711DB7C925AB5703001170A3 /* Resources */,
 				EE1A3025E160890469595DA2 /* [CP] Embed Pods Frameworks */,
 				01FAB8FC424FCFD96AC36082 /* [CP] Copy Pods Resources */,
+				71E6ED6025B9F369004FCE39 /* Generate Apollo Client */,
 			);
 			buildRules = (
 			);
@@ -705,6 +715,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		71E6ED6025B9F369004FCE39 /* Generate Apollo Client */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo Client";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		71E6ED6425B9F3E0004FCE39 /* Generate GraphQL Queries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate GraphQL Queries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}\"/ApolloCodegen\nxcrun -sdk macosx swift run ApolloCodegen generate\n";
 		};
 		82281FECF9CCA3AD2208ACB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

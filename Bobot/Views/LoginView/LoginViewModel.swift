@@ -32,19 +32,11 @@ extension LoginViewModel: GIDSignInDelegate {
             }
             return
         }
-        
-        let userId = user.userID                  // For client-side use only!
-        let idToken = user.authentication.idToken // Safe to send to the server
-        let fullName = user.profile.name
-        let givenName = user.profile.givenName
-        let familyName = user.profile.familyName
+         // For client-side use only!
+        let idToken = user.authentication.idToken
         let email = user.profile.email
-        let accessToken = user.authentication.accessToken
         
         UserDefaults.standard.setValue(true, forKey: UserDefaultsKeys.isSignedIn.rawValue)
-        
-        print("accessToken: ", accessToken)
-        print("idToken: ", idToken)
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
