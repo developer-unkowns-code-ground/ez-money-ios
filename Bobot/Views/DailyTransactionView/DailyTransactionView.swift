@@ -19,7 +19,6 @@ struct DailyTransactionView: View {
             ScrollView {
                 VStack {
                     HStack {
-                        
                     }
                     .frame(height: 158)
                     
@@ -60,8 +59,6 @@ struct DailyTransactionView: View {
                             .foregroundColor(.white)
                             .clipShape(Circle())
                         })
-                    
-                    
                 }
                 .padding(.horizontal, 24)
             }

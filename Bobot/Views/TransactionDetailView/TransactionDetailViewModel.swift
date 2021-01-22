@@ -5,8 +5,8 @@
 //  Created by Muhammad Rizky Hasibuan on 15/01/21.
 //
 
-import Foundation
 import Combine
+import Foundation
 
 final class TransactionDetailViewModel: ObservableObject {
     @Published var isOutcomeSelected: Bool = true

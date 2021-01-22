@@ -45,7 +45,6 @@ struct AllWalletRowView: View {
             .padding(34)
             .frame(maxWidth: .infinity)
             .background(Color.white)
-            
         }
         .cornerRadius(16)
         .shadow(color: R.color.black1.color.opacity(0.1), radius: 5, x: 0.7, y: 0.7)

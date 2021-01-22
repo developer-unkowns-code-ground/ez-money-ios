@@ -60,7 +60,7 @@ struct TransactionDetailView: View {
         
         var body: some View {
             let isEmpty = text.wrappedValue.isEmpty
-            let foregroundColor = isEmpty ? Color.init(.placeholderText) : R.color.black1.color
+            let foregroundColor = isEmpty ? Color(.placeholderText) : R.color.black1.color
             
             return VStack {
                 Spacer()

@@ -5,8 +5,8 @@
 //  Created by Muhammad Rizky Hasibuan on 10/01/21.
 //
 
-import SwiftUI
 import GoogleSignIn
+import SwiftUI
 
 struct LoginView: View {
     init(viewModel: LoginViewModel) {
@@ -69,7 +69,6 @@ struct LoginView: View {
         }
         .onAppear(perform: viewModel.onAppear)
     }
-    
 }
 
 struct LoginView_Previews: PreviewProvider {

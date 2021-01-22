@@ -46,11 +46,8 @@ struct WalletDetailView: View {
                         .foregroundColor(Color.white)
                         .cornerRadius(60)
                     })
-                
             }
             .padding(.all, 24)
-            
-           
             
             Spacer()
         }

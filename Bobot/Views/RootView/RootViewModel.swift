@@ -8,5 +8,4 @@
 import Combine
 
 final class RootViewModel: ViewModel {
-    
 }

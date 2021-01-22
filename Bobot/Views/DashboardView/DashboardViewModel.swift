@@ -8,6 +8,4 @@
 import Combine
 
 final class DashboardViewModel: ViewModel {
-    
 }
-

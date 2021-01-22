@@ -1,5 +1,0 @@
-mutation login {
-  login {
-      login(token: "qwe")
-  }
-}

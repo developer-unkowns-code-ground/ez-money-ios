@@ -1,0 +1,6 @@
+{
+  "cca2f85d3dc092adaab03d686cf33412998debb2bf710e80173f49e0c02d03df": {
+    "name": "Login",
+    "source": "mutation Login($token: String!) {\n  login(login: {token: $token}) {\n    __typename\n    accessToken\n  }\n}"
+  }
+}

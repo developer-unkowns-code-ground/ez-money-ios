@@ -15,7 +15,8 @@ target 'Bobot' do
   pod 'GoogleSignIn'
   pod 'R.swift'
   pod 'Firebase/Analytics'
-  pod "Apollo"
+  pod 'Apollo'
+  pod 'SwiftLint'
 
   # Pods for Bobot
 
