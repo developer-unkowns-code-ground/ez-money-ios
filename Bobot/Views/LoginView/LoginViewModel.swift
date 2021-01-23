@@ -10,9 +10,8 @@ import GoogleSignIn
 
 final class LoginViewModel: NSObject, ViewModel {
     func loginHandler() {
-        AuthenticationState.shared.isAuthenticated = true
-        
-//        GIDSignIn.sharedInstance()?.signIn()
+//        AuthenticationState.shared.isAuthenticated = true
+        GIDSignIn.sharedInstance()?.signIn()
     }
     
     func onAppear() {
@@ -33,10 +32,26 @@ extension LoginViewModel: GIDSignInDelegate {
             return
         }
          // For client-side use only!
-        let idToken = user.authentication.idToken
-        let email = user.profile.email
+        let token = user.authentication.idToken ?? ""
+        performSignIn(with: token)
         
         UserDefaults.standard.setValue(true, forKey: UserDefaultsKeys.isSignedIn.rawValue)
+    }
+    
+    private func performSignIn(with token: String) {
+        let mutation = LoginMutation(token: token)
+        Network.shared.apollo.perform(mutation: mutation, publishResultToStore: false, queue: .global(qos: .background)) { result in
+            
+            print("+=====")
+            switch result {
+            case .success(let data):
+                print("===========")
+                print(data)
+            case .failure(let error):
+                print("===========")
+                print("error", error)
+            }
+        }
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,

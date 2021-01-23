@@ -8,10 +8,19 @@
 import Firebase
 import UIKit
 
+#if DEBUG
+import CocoaDebug
+#endif
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+        #if DEBUG
+        CocoaDebug.enable()
+        CocoaDebug.showBubble()
+        #endif
         return true
     }
 
@@ -28,4 +37,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+}
+
+public func print<T>(file: String = #file, function: String = #function, line: Int = #line, _ message: T, color: UIColor = .white) {
+    #if DEBUG
+    Swift.print(message)
+    _SwiftLogHelper.shared.handleLog(file: file, function: function, line: line, message: message, color: color)
+    #endif
 }

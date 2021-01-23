@@ -2,9 +2,9 @@
 platform :ios, '13.0'
 
 plugin 'cocoapods-keys', {
-  :project => "Eidolon",
+  :project => "Bobot",
   :keys => [
-    "GraphQLBaseURL"
+    "SchemaURL"
   ]
 }
 
@@ -17,6 +17,7 @@ target 'Bobot' do
   pod 'Firebase/Analytics'
   pod 'Apollo'
   pod 'SwiftLint'
+  pod 'CocoaDebug', :configurations => ['Debug']  
 
   # Pods for Bobot
 

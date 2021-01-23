@@ -16,6 +16,18 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>NSAppTransportSecurity</key>
+     <dict>
+          <key>NSExceptionDomains</key>
+          <dict>
+          <key>bobot.nias.dev</key>
+          <dict>
+               <key>NSExceptionAllowsInsecureHTTPLoads</key>
+               <true/>
+          </dict>
+     </dict>
+
+</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
