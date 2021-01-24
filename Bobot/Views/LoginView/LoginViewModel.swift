@@ -5,6 +5,7 @@
 //  Created by Muhammad Rizky Hasibuan on 10/01/21.
 //
 
+import Apollo
 import Combine
 import GoogleSignIn
 
@@ -40,18 +41,52 @@ extension LoginViewModel: GIDSignInDelegate {
     
     private func performSignIn(with token: String) {
         let mutation = LoginMutation(token: token)
-        Network.shared.apollo.perform(mutation: mutation, publishResultToStore: false, queue: .global(qos: .background)) { result in
-            
-            print("+=====")
-            switch result {
-            case .success(let data):
-                print("===========")
-                print(data)
-            case .failure(let error):
-                print("===========")
-                print("error", error)
+        
+        loadSomeData { result in
+            print("====")
+        }
+        
+        Network.shared.apollo.perform(mutation: mutation) { result in
+            DispatchQueue.main.async {
+                print("+=====")
+                switch result {
+                case .success(let data):
+                    print("===========")
+                    print(data)
+                case .failure(let error):
+                    print("===========")
+                    print("error", error)
+                }
             }
         }
+//
+//        print(request)
+    }
+    
+    enum ErrorC: Swift.Error {
+        case badURL
+        case badData
+        case other(Swift.Error)
+    }
+    
+    func loadSomeData(then block: @escaping(Result<Data, ErrorC>) -> Void) {
+        let url = URL(string: "https://api.coindesk.com/v1/bpi/currentprice.json")!
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard error == nil else {
+                block(.failure(.other(error!)))
+                return
+            }
+            
+            guard let data = data else {
+                block(.failure(.badURL))
+                return
+            }
+            
+            block(.success(data))
+        }
+        
+        task.resume()
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,

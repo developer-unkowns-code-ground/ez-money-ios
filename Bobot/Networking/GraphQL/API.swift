@@ -35,7 +35,7 @@ public final class LoginMutation: GraphQLMutation {
 
     public static var selections: [GraphQLSelection] {
       return [
-        GraphQLField("login", arguments: ["login": ["token": GraphQLVariable("token")]], type: .nonNull(.object(Login.selections))),
+        GraphQLField("login", arguments: ["login": ["token": GraphQLVariable("token")]], type: .nonNull(.object(Login.selections)))
       ]
     }
 
@@ -64,7 +64,7 @@ public final class LoginMutation: GraphQLMutation {
       public static var selections: [GraphQLSelection] {
         return [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
-          GraphQLField("accessToken", type: .nonNull(.scalar(String.self))),
+          GraphQLField("accessToken", type: .nonNull(.scalar(String.self)))
         ]
       }
 

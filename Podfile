@@ -17,6 +17,7 @@ target 'Bobot' do
   pod 'Firebase/Analytics'
   pod 'Apollo'
   pod 'SwiftLint'
+  pod 'Logging'
   pod 'CocoaDebug', :configurations => ['Debug']  
 
   # Pods for Bobot

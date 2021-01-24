@@ -6,10 +6,13 @@
 //
 
 import Firebase
+import Logging
 import UIKit
 
 #if DEBUG
 import CocoaDebug
+
+let logger = Logger(label: "com.paymytea.Bobot")
 #endif
 
 @main

@@ -14,6 +14,17 @@ struct Network {
     
     var apollo: ApolloClient {
         let keys = BobotKeys()
-        return ApolloClient(url: URL(string: keys.schemaURL)!)
+        let url = URL(string: keys.schemaURL)!
+        
+        let cache = InMemoryNormalizedCache()
+        let store = ApolloStore(cache: cache)
+        let client = URLSessionClient()
+        
+        let provider = NetworkInterceptorProvider(store: store, client: client)
+        let transport = RequestChainNetworkTransport(interceptorProvider: provider, endpointURL: url)
+        
+        return ApolloClient(
+            networkTransport: transport, store: store
+        )
     }
 }

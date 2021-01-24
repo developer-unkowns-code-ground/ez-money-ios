@@ -37,6 +37,9 @@
 		715CAF7425B0BFA2009E8D4F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 715CAF7125B0BFA2009E8D4F /* OpenSans-Bold.ttf */; };
 		715CAF7D25B0C250009E8D4F /* DailyTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CAF7C25B0C250009E8D4F /* DailyTransactionView.swift */; };
 		715CAF8325B0C306009E8D4F /* EmptyTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CAF8225B0C306009E8D4F /* EmptyTransactionView.swift */; };
+		7191EDD025BDBDB100712D9D /* NetworkInterceptorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191EDCF25BDBDB100712D9D /* NetworkInterceptorClient.swift */; };
+		7191EDD525BDBDCF00712D9D /* RequestLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191EDD425BDBDCF00712D9D /* RequestLoggingInterceptor.swift */; };
+		7191EDDA25BDBDE600712D9D /* ResponseLoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7191EDD925BDBDE600712D9D /* ResponseLoggingInterceptor.swift */; };
 		71DFB3CB25B1EB8200A2CE02 /* DailyTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB3CA25B1EB8200A2CE02 /* DailyTransactionViewModel.swift */; };
 		71DFB3D125B1F5A400A2CE02 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB3D025B1F5A400A2CE02 /* TransactionDetailView.swift */; };
 		71DFB3D625B1F5AF00A2CE02 /* TransactionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DFB3D525B1F5AF00A2CE02 /* TransactionDetailViewModel.swift */; };
@@ -115,6 +118,9 @@
 		715CAF7125B0BFA2009E8D4F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		715CAF7C25B0C250009E8D4F /* DailyTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTransactionView.swift; sourceTree = "<group>"; };
 		715CAF8225B0C306009E8D4F /* EmptyTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTransactionView.swift; sourceTree = "<group>"; };
+		7191EDCF25BDBDB100712D9D /* NetworkInterceptorClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorClient.swift; sourceTree = "<group>"; };
+		7191EDD425BDBDCF00712D9D /* RequestLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLoggingInterceptor.swift; sourceTree = "<group>"; };
+		7191EDD925BDBDE600712D9D /* ResponseLoggingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLoggingInterceptor.swift; sourceTree = "<group>"; };
 		71DFB3CA25B1EB8200A2CE02 /* DailyTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTransactionViewModel.swift; sourceTree = "<group>"; };
 		71DFB3D025B1F5A400A2CE02 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		71DFB3D525B1F5AF00A2CE02 /* TransactionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewModel.swift; sourceTree = "<group>"; };
@@ -425,6 +431,9 @@
 			children = (
 				602230C625BB45F400331640 /* GraphQL */,
 				60E9D5F025BB43EF0023030A /* Network.swift */,
+				7191EDCF25BDBDB100712D9D /* NetworkInterceptorClient.swift */,
+				7191EDD425BDBDCF00712D9D /* RequestLoggingInterceptor.swift */,
+				7191EDD925BDBDE600712D9D /* ResponseLoggingInterceptor.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -743,7 +752,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -765,7 +774,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n";
+			shellScript = "
+";
 		};
 		71E6ED6425B9F3E0004FCE39 /* Generate GraphQL Queries */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -851,11 +861,13 @@
 				71E5240525AB602200E07230 /* DashboardView.swift in Sources */,
 				711DB7B025AB5701001170A3 /* SceneDelegate.swift in Sources */,
 				71EE630425AE1C1F00EB984A /* ViewModel.swift in Sources */,
+				7191EDDA25BDBDE600712D9D /* ResponseLoggingInterceptor.swift in Sources */,
 				713BD6CE25ACB60600C3A305 /* ResourceExtensions.swift in Sources */,
 				7119947D25B3FE190048C401 /* AuthenticationState.swift in Sources */,
 				711DB7B225AB5701001170A3 /* LoginView.swift in Sources */,
 				71E5240B25AB603600E07230 /* TransactionView.swift in Sources */,
 				713BD6D625ACBDCC00C3A305 /* WalletDetailView.swift in Sources */,
+				7191EDD025BDBDB100712D9D /* NetworkInterceptorClient.swift in Sources */,
 				602230D725BB461200331640 /* API.swift in Sources */,
 				71DFB3D625B1F5AF00A2CE02 /* TransactionDetailViewModel.swift in Sources */,
 				713BD6BF25ACB3F300C3A305 /* R.generated.swift in Sources */,
@@ -867,6 +879,7 @@
 				71DFB3D125B1F5A400A2CE02 /* TransactionDetailView.swift in Sources */,
 				715CAF6525B0B261009E8D4F /* NumberFormatterExtension.swift in Sources */,
 				71EE62FE25AE1BDB00EB984A /* RootViewModel.swift in Sources */,
+				7191EDD525BDBDCF00712D9D /* RequestLoggingInterceptor.swift in Sources */,
 				60E9D5F125BB43EF0023030A /* Network.swift in Sources */,
 				71DFB3CB25B1EB8200A2CE02 /* DailyTransactionViewModel.swift in Sources */,
 				715CAF6B25B0BD75009E8D4F /* AllWalletRowView.swift in Sources */,
@@ -1062,7 +1075,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.paymytea.Bobot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1087,7 +1100,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.paymytea.Bobot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
