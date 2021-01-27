@@ -16,58 +16,60 @@ struct LoginView: View {
     @ObservedObject private var viewModel: LoginViewModel
 
     var body: some View {
-        NavigationView {
-            HStack(alignment: .center) {
-                Spacer()
-                VStack(alignment: .center) {
+        LoadingView(isShowing: $viewModel.isLoading) {
+            NavigationView {
+                HStack(alignment: .center) {
                     Spacer()
-                    HStack(alignment: .center) {
-                        VStack {
+                    VStack(alignment: .center) {
+                        Spacer()
+                        HStack(alignment: .center) {
                             VStack {
-                                Image(R.image.bobotLogo.name)
-                                    .resizable()
-                                    .aspectRatio(1.5, contentMode: .fit)
-                            }
-                            .frame(height: 255, alignment: .center)
-                            .padding(EdgeInsets(top: 0, leading: 50, bottom: 0, trailing: 50))
-                            
-                            Text(R.string.localizable.appMainName())
-                                .font(R.font.poppinsBoldItalic.font(size: 38))
-                                .italic()
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.white)
-                            
-                            Text(R.string.localizable.appMainTitle())
-                                .font(R.font.poppinsBoldItalic.font(size: 24))
-                                .italic()
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.white)
-                            
-                            Spacer()
-                                .frame(height: 50)
-                            
-                            Button(action: viewModel.loginHandler, label: {
-                                Image(R.image.google.name)
-                                Text(R.string.localizable.socialLoginGoogle())
+                                VStack {
+                                    Image(R.image.bobotLogo.name)
+                                        .resizable()
+                                        .aspectRatio(1.5, contentMode: .fit)
+                                }
+                                .frame(height: 255, alignment: .center)
+                                .padding(EdgeInsets(top: 0, leading: 50, bottom: 0, trailing: 50))
+                                
+                                Text(R.string.localizable.appMainName())
+                                    .font(R.font.poppinsBoldItalic.font(size: 38))
+                                    .italic()
                                     .fontWeight(.bold)
-                                    .font(R.font.poppinsBold.font(size: 16))
-                                    .foregroundColor(.black)
-                            })
-                            .frame(maxWidth: .infinity, minHeight: 56)
-                            .padding(.horizontal, 22)
-                            .background(Color.white)
-                            .cornerRadius(60)
+                                    .foregroundColor(Color.white)
+                                
+                                Text(R.string.localizable.appMainTitle())
+                                    .font(R.font.poppinsBoldItalic.font(size: 24))
+                                    .italic()
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.white)
+                                
+                                Spacer()
+                                    .frame(height: 50)
+                                
+                                Button(action: viewModel.loginHandler, label: {
+                                    Image(R.image.google.name)
+                                    Text(R.string.localizable.socialLoginGoogle())
+                                        .fontWeight(.bold)
+                                        .font(R.font.poppinsBold.font(size: 16))
+                                        .foregroundColor(.black)
+                                })
+                                .frame(maxWidth: .infinity, minHeight: 56)
+                                .padding(.horizontal, 22)
+                                .background(Color.white)
+                                .cornerRadius(60)
+                            }
                         }
+                        Spacer()
                     }
+                    
                     Spacer()
                 }
-
-                Spacer()
+                .background(R.color.supreme.color)
+                .edgesIgnoringSafeArea(.all)
             }
-            .background(R.color.supreme.color)
-            .edgesIgnoringSafeArea(.all)
+            .onAppear(perform: viewModel.onAppear)
         }
-        .onAppear(perform: viewModel.onAppear)
     }
 }
 

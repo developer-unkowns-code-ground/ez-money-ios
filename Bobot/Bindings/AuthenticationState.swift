@@ -9,9 +9,10 @@ import Combine
 import Foundation
 
 class AuthenticationState: NSObject, ObservableObject {
-    @Published var isAuthenticated: Bool = false
+    @Published var isAuthenticated: Bool
     
     override private init() {
+        isAuthenticated = AuthenticationManager.shared.isAuthenticated()
         super.init()
     }
     

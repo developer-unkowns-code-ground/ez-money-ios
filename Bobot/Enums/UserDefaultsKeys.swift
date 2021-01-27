@@ -8,5 +8,5 @@
 import Foundation
 
 enum UserDefaultsKeys: String {
-    case isSignedIn = "IS_SIGNED_IN"
+    case accessToken = "LOCAL_ACCESS_TOKEN"
 }
