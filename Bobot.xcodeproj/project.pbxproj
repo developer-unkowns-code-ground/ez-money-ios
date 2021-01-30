@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F9DC10289E9424872A61653 /* Pods_BobotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76300CBCD9C2A77F58211A5D /* Pods_BobotTests.framework */; };
 		4D1C790D2A4D2C437DEA2B93 /* Pods_Bobot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41BCF44607101C9FC4A9E8E /* Pods_Bobot.framework */; };
+		600731BD25C5A884006DDD7C /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600731BC25C5A884006DDD7C /* AuthenticationInterceptor.swift */; };
 		602230D625BB461200331640 /* operationIDs.json in Resources */ = {isa = PBXBuildFile; fileRef = 602230D225BB461200331640 /* operationIDs.json */; };
 		602230D725BB461200331640 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602230D325BB461200331640 /* API.swift */; };
 		602230D825BB461200331640 /* Queries in Resources */ = {isa = PBXBuildFile; fileRef = 602230D425BB461200331640 /* Queries */; };
@@ -86,6 +87,7 @@
 /* Begin PBXFileReference section */
 		13B39FF37C9F5EF9352B37DB /* Pods-Bobot-BobotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bobot-BobotUITests.release.xcconfig"; path = "Target Support Files/Pods-Bobot-BobotUITests/Pods-Bobot-BobotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1A9661D3EDB8222869B7D4DE /* Pods_Bobot_BobotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bobot_BobotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600731BC25C5A884006DDD7C /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		602230D225BB461200331640 /* operationIDs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = operationIDs.json; sourceTree = "<group>"; };
 		602230D325BB461200331640 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		602230D425BB461200331640 /* Queries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Queries; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				602230C625BB45F400331640 /* GraphQL */,
+				600731BC25C5A884006DDD7C /* AuthenticationInterceptor.swift */,
 				60E9D5F025BB43EF0023030A /* Network.swift */,
 				7191EDCF25BDBDB100712D9D /* NetworkInterceptorClient.swift */,
 				7191EDD425BDBDCF00712D9D /* RequestLoggingInterceptor.swift */,
@@ -898,6 +901,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E523F925AB5A1100E07230 /* LoginViewModel.swift in Sources */,
+				600731BD25C5A884006DDD7C /* AuthenticationInterceptor.swift in Sources */,
 				715CAF7D25B0C250009E8D4F /* DailyTransactionView.swift in Sources */,
 				713BD69625ACB1C500C3A305 /* EmptyWalletView.swift in Sources */,
 				713BD6DC25ACBDE800C3A305 /* WalletDetailViewModel.swift in Sources */,

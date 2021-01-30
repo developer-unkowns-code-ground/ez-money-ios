@@ -1,0 +1,8 @@
+query GetMyWallet {
+    GetMyWallet {
+        id,
+        amount,
+        name
+    }
+}
+

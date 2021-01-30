@@ -44,6 +44,7 @@ struct DashboardView: View {
                     }
                 }
                 .padding(.all)
+                .onAppear(perform: viewModel.onAppear)
                 
                 Spacer()
             }

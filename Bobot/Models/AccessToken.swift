@@ -9,7 +9,7 @@ import Foundation
 
 struct AccessToken {
     var isExpired: Bool {
-        return true
+        return false
     }
     
     var base64String: String {
